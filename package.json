@@ -1,0 +1,9 @@
+{
+  "name": "auto-init-hasura",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "hasura": "npx hasura-cli console --no-browser --project docker/hasura"
+  }
+}
