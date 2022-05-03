@@ -4,3 +4,4 @@ npx -y hasura-cli init ./docker/hasura --endpoint http://localhost:4040 --admin-
 
 curl https://raw.githubusercontent.com/ilya-belik/init-hasura/main/prod-env/.prod.env -o ./docker/hasura/.prod.env && \
 curl https://raw.githubusercontent.com/ilya-belik/init-hasura/main/prod-env/.env.secret -o ./docker/hasura/.env.secret
+rm ./init.bash
