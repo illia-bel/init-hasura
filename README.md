@@ -8,6 +8,6 @@
 
    ```sh
     curl https://raw.githubusercontent.com/ilya-belik/init-hasura/main/docker-compose.yml -o docker-compose.yml && \
-    curl https://raw.githubusercontent.com/ilya-belik/init-hasura/main/init.bash -o init-hasura.bash && \
-    ./init.sh
+    curl https://raw.githubusercontent.com/ilya-belik/init-hasura/main/init.bash -o init.sh && \
+    sh ./init.sh
    ```
