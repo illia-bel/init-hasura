@@ -2,9 +2,9 @@ curl https://raw.githubusercontent.com/ilya-belik/init-hasura/main/docker-compos
 
 npx -y hasura-cli init ./docker/hasura --endpoint http://localhost:4040 --admin-secret 'secret' && \
 
-curl https://raw.githubusercontent.com/ilya-belik/init-hasura/main/prod-env/.prod.env -o ./docker/hasura/.prod.env && \
-curl https://raw.githubusercontent.com/ilya-belik/init-hasura/main/prod-env/.env.secret -o ./docker/hasura/.env.secret && \
-curl https://raw.githubusercontent.com/ilya-belik/init-hasura/main/prod-env/config.yaml -o ./docker/hasura/config.yaml && \
+curl https://raw.githubusercontent.com/ilya-belik/init-hasura/main/files/.prod.env -o ./docker/hasura/.prod.env && \
+curl https://raw.githubusercontent.com/ilya-belik/init-hasura/main/files/.env.secret -o ./docker/hasura/.env.secret && \
+curl https://raw.githubusercontent.com/ilya-belik/init-hasura/main/files/config.yaml -o ./docker/hasura/config.yaml && \
+curl https://raw.githubusercontent.com/ilya-belik/init-hasura/main/files/databases.yaml -o ./docker/hasura/metadata/databases/databases.yaml && \
 
-docker compose up -d && \
-npx hasura-cli console --no-browser --project docker/hasura
+docker compose up -d
